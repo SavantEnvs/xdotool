@@ -1,0 +1,3 @@
+# move then report
+mousemove 10 20
+getmouselocation --shell

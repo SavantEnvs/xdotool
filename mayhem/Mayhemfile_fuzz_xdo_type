@@ -1,0 +1,9 @@
+project: savantenvs/xdotool
+target: fuzz_xdo_type
+cmds:
+  - cmd: /mayhem/mayhem/bin/fuzz_xdo_type
+    libfuzzer: true
+    timeout: 10
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_xdo_type/testsuite

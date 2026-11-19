@@ -1,0 +1,9 @@
+project: savantenvs/xdotool
+target: fuzz_xdotool_script
+cmds:
+  - cmd: /mayhem/mayhem/bin/fuzz_xdotool_script @@
+    afl: true
+    timeout: 10
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_xdotool_script/testsuite

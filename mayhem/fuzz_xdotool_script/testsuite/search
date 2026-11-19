@@ -1,0 +1,2 @@
+search --name 'xterm' windowsize %@ 100 100
+getdisplaygeometry
